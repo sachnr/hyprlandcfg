@@ -2,6 +2,11 @@
 
 ![](wallpaper/.re.png)
 
+### **Required**
+```
+pacman -S slurp grim xdg-desktop-portal-wlr swayidle swaylock wl-clipboard playerctl mpd ncmpcpp  
+yay -S hyprpaper-git waybar-hyprland mpdris2 rofi-lbonn-wayland 
+```
 ### **envvars for nvidia**
 `/usr/bin/hlnvidia`
 ```
@@ -51,3 +56,15 @@ Comment=An intelligent dynamic tiling Wayland compositor
 Exec=hlnvidia
 Type=Application
 ```
+
+### **fixes**
+<details>
+<summary><b>Gtk apps take long time to load</summary>
+
+install xdg-desktop-portal from this [*repo*](https://github.com/flatpak/xdg-desktop-portal)
+</details>
+<details>
+<summary><b>screen sharing with nvidia card does not work</summary>
+
+try this [*patch*](https://aur.archlinux.org/cgit/aur.git/tree/nvidia.patch?h=hyprland-nvidia-git)
+</details>
