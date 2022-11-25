@@ -4,10 +4,13 @@
 
 ### **Required**
 ```
-pacman -S slurp grim xdg-desktop-portal-wlr swayidle swaylock wl-clipboard playerctl mpd ncmpcpp  
+pacman -S slurp grim xdg-desktop-portal-wlr swayidle swaylock wl-clipboard playerctl mpd ncmpcpp pavucontrol
 yay -S hyprpaper-git waybar-hyprland mpdris2 rofi-lbonn-wayland 
 ```
-### **envvars for nvidia**
+
+<details>
+<summary><big><B>envvars for nvidia</big></summary>
+
 `/usr/bin/hlnvidia`
 ```
 #!/bin/sh
@@ -47,7 +50,6 @@ export MOZ_ENABLE_WAYLAND=1
 exec Hyprland
 ```
 
-### **Session**
 `/usr/share/wayland-sessions/hyprlandnvidia.desktop`
 ```
 [Desktop Entry]
@@ -56,6 +58,8 @@ Comment=An intelligent dynamic tiling Wayland compositor
 Exec=hlnvidia
 Type=Application
 ```
+
+</details>
 
 ### **fixes**
 <details>
@@ -66,5 +70,5 @@ install xdg-desktop-portal from this [*repo*](https://github.com/flatpak/xdg-des
 <details>
 <summary><b>screen sharing with nvidia card does not work</summary>
 
-try this [*patch*](https://aur.archlinux.org/cgit/aur.git/tree/nvidia.patch?h=hyprland-nvidia-git)
+~~try this [*patch*](https://aur.archlinux.org/cgit/aur.git/tree/nvidia.patch?h=hyprland-nvidia-git)~~
 </details>
