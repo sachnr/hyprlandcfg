@@ -119,7 +119,7 @@
     },
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl prev",
+    "on-scroll-down": "playerctl previous",
     "tooltip-format": "MPD (connected)",
     "tooltip-format-disconnected": "MPD (disconnected)"
   }
